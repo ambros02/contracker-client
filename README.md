@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Usage of ConTracker
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+you will need a unix environment with a bash shell
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Server
+1. install python 3.12 and pipenv
+2. run `pipenv install` to install the dependencies from the pipfile
+3. run `pipenv run start_dev_server_unix` to start the server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Client
+1. install node and npm
+2. run `npm install` to install the dependencies
+3. run `npm run dev` to start the server
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. In the client fill in the information under edit information and press submit
+2. You can check in the server log if it is still working (takes some time)
+3. If you get a notification about unmatched usernames use the checkUsernames in the top to set the unmatched usernames and then submit again
+4. Once it runs through go to repository data and select the contributors which are in the respective team then press set contributors
+5. Check in the server log if it set the contributors correctly
+6. Press the analyze repository button in the client
+7. Check the server logs and search for `missing contributors`, there is one for the server and one for the client, for all missing contributors add a mapping to the dictionary in src/utils/username_matcher, where you put the missing contributors from the log as keys and their github usernames as values, you can also add the ones which you fixed in the 3. step if there were any
+8. When you change anything in the server it reloads the server so follow again through step 1-6 and it will display the ratings in the server console.
