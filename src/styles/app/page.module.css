@@ -1,0 +1,55 @@
+
+
+
+.pageHeader {
+  min-height: 4vh;
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--darker-background);
+}
+
+.fillSpace {
+  flex-grow: 1;
+}
+
+.mainContainer {
+  display: flex;
+  background-color: #EFE4D2;
+  width: 100vw;
+}
+
+.leftDrawer{
+  flex: 0 0 14vw;
+  padding-top: 4.5vh;
+  min-height: 95vh;
+  background-color: #954C2E;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+
+}
+
+.drawerButton {
+  overflow-wrap: break-word;
+  padding: 0.5vh 0.4vw;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.8em;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.mainContent {
+  width: 86vw;
+  background-color: var(--background);
+  padding: 4vh 3vw;
+  text-align: center;
+}
+
+.welcomeText{
+  padding-bottom: 5vh;
+}
+

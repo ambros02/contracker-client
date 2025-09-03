@@ -1,0 +1,36 @@
+
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.formInput {
+    font-size: 1em;
+}
+
+.formSubmitButton {
+    font-size: 1em;
+}
+
+.usernamesForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.possibleUsernamesContainer {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    height: 30vh;
+    overflow-y: scroll;
+}

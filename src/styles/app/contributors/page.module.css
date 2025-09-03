@@ -1,0 +1,17 @@
+
+
+.selectionContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vw;
+    padding: 3vh 2vw;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+
+.selectionButtons {
+    font-size: 1em;
+    padding: 1vh 1vw;
+    white-space: nowrap;
+}

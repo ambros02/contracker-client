@@ -1,0 +1,18 @@
+
+
+
+
+.contributorContainer {
+    width: 75%;
+    background-color: var(--darker-background);
+    padding: 2vh 2vw;
+    margin: 2vh 0;
+    text-align: left;
+}
+
+.taskListItems {
+    margin: 2vh 0;
+    border: solid 2px var(--foreground);
+    padding: 1vh 1vw;
+    overflow-wrap: break-word;
+}
