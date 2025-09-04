@@ -11,6 +11,9 @@ you will need a unix environment with a bash shell
 1. install python 3.12 and pipenv
 2. run `pipenv install` to install the dependencies from the pipfile
 3. run `pipenv run start_dev_server_unix` to start the server
+4. In the src directory create a .env file
+5. To the .env file add a github access token for GITHUB_AUTH_TOKEN
+6. To the .env file add a github access token for GRAPHQL_AUTH_TOKEN here you need a classic auth token with read:org and project anabled
 
 ### Client
 1. install node and npm
